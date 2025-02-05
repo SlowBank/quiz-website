@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Quiz <span id="quiz-count"></span></h1>
+    </header>
+    <main>
+        <div id="login-container">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login">Login</button>
+            <button id="register">Register</button>
+            <button id="guest">I'm a Guest</button>
+            <div id="login-message"></div>
+        </div>
+        <div id="quiz-container" style="display: none;">
+            <div id="question"></div>
+            <button>A</button>
+            <button>B</button>
+            <button>C</button>
+            <button>D</button>
+        </div>
+        <div id="result"></div>
+        <div id="congratulations" style="display: none;">
+            <p>Congratulations! You've completed the quiz.</p>
+            <div id="summary"></div>
+            <p id="score"></p>
+            <button id="try-again">Try Again</button>
+            <button id="go-back" onclick="window.location.href='index.html'">Go Back to Main Page</button>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
